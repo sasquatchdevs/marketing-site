@@ -1,13 +1,8 @@
 import { defineConfig } from "astro/config";
-import path from "node:path";
 import react from "@astrojs/react";
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react()],
-  vite: {
-    ssr: {
-      noExternal: ["bootstrap"],
-    },
-  },
+  integrations: [react(), tailwind()],
 });

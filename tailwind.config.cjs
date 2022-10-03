@@ -7,9 +7,6 @@ module.exports = {
         primary: "#448c74",
         hover: "rgba(54, 108, 90, 1)"
       },
-      screens: {
-        'tablet': '900'
-      },
     },
   },
   plugins: [],

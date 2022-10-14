@@ -1,0 +1,43 @@
+<section>
+  <div
+    class="swiper mySwiper swiper-slide w-sm-auto h-auto swiper-slide-active"
+    data-swiper-slide-index="0"
+    role="group"
+    aria-label="1 / 8"
+    style="margin-right: 24px;"
+  >
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card flex-auto p-9 bg-gray-100 w-64 rounded-lg">
+          <div class="card-front">
+            <img src="/assets/figma.svg" alt="figma logo" class="w-16" />
+          </div>
+          <div class="card-back">
+            <div class="card-body">
+              <img src="/assets/figma.svg" alt="figma logo" class="w-12" />
+              <p>Cool stuff we do in Figma.</p>
+            </div>
+          </div>
+
+          Figma Card
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // @ts-ignore
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      639: { slidesPerView: 2 },
+      992: { slidesPerView: 3 },
+    },
+  });
+</script>

@@ -1,0 +1,144 @@
+<section class="flex my-20">
+  <!-- SERVICES CARDS -->
+  <div
+    class="container max-w-screen-2xl mx-auto sm:pt-2 md:pt-3 lg:pt-4 xl:pt-5 xxl:mt-4 lg:pb-2 xl:pb-4 xxl:pb-5"
+  >
+    <h2 class="font-semibold text-4xl text-center pb-3 mb-4 lg:pb-4">Our Services</h2>
+    <div class="swiper mySwiper px-4">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a
+            class="group relative flex flex-col min-w-0 break-words bg-clip-border rounded-3xl bg-gray-100 border-0 h-full text-center no-underline"
+            href="#"
+          >
+            <div class="card-body flex-auto p-9 text-gray-700">
+              <img
+                src="/assets/chart.svg"
+                alt="Scope of work document"
+                class="w-14 h-14 block mx-auto mb-4"
+              />
+              <h3 class="font-semibold text-2xl mb-4">Goals Oriented Build Plan</h3>
+              <p class="card-text">
+                Our team will chart out the specific content, features, and SEO elements based on a custom
+                scope of work.
+              </p>
+            </div>
+            <div
+              style="width: calc(100% - 2.375rem * 2);"
+              class="card-footer m-auto border-0 px-0 pt-0 pb-4 mb-3"
+            >
+              <div
+                class="inline-flex items-center justify-center shrink-0 w-12 h-12 p-0 rounded-full border border-primary border-solid group-hover:bg-primary transition-[background-color] ease-in-out"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 text-primary group-hover:text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a
+            class="group relative flex flex-col min-w-0 break-words bg-clip-border rounded-3xl bg-gray-100 border-0 h-full text-center no-underline"
+            href="#"
+          >
+            <div class="card-body flex-auto p-9 text-gray-700">
+              <img src="/assets/compass.svg" alt="Web Development" class="w-14 h-14 block mx-auto mb-4" />
+              <h3 class="font-semibold text-2xl mb-4">Web Development</h3>
+              <p class="card-text">
+                Your Project Manager will guide you through the entire process while directing our development
+                team.
+              </p>
+            </div>
+            <div
+              style="width: calc(100% - 2.375rem * 2);"
+              class="card-footer m-auto border-0 px-0 pt-0 pb-4 mb-3"
+            >
+              <div
+                class="inline-flex items-center justify-center shrink-0 w-12 h-12 p-0 rounded-full border border-primary border-solid group-hover:bg-primary transition-[background-color] ease-in-out"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 text-primary group-hover:text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a
+            class="group relative flex flex-col min-w-0 break-words bg-clip-border rounded-3xl bg-gray-100 border-0 h-full text-center no-underline"
+            href="#"
+          >
+            <div class="card-body flex-auto p-9 text-gray-700">
+              <img src="/assets/telephone.svg" alt="Ongoing support" class="w-14 h-14 block mx-auto mb-4" />
+              <h3 class="font-semibold text-2xl mb-4">Ongoing Support</h3>
+              <p class="card-text">
+                We provide flexible options to continue supporting and maintaining your site after you go
+                live.
+              </p>
+            </div>
+            <div
+              style="width: calc(100% - 2.375rem * 2);"
+              class="card-footer m-auto border-0 px-0 pt-0 pb-4 mb-3"
+            >
+              <div
+                class="inline-flex items-center justify-center shrink-0 w-12 h-12 p-0 rounded-full border border-primary border-solid group-hover:bg-primary transition-[background-color] ease-in-out"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 text-primary group-hover:text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination relative bottom-0 mt-4 pt-4"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // @ts-ignore
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      639: { slidesPerView: 2 },
+      992: { slidesPerView: 3 },
+    },
+  });
+</script>

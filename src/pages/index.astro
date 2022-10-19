@@ -3,17 +3,19 @@
 import MainHead from "../components/MainHead.astro";
 import TopNavigation from "../components/TopNavigation.astro";
 import Hero from "../components/Hero.astro";
+import Services from "../components/Services.astro";
+import ToolsUsed from "../components/ToolsUsed.astro";
 ---
 
 <html lang="en">
   <head>
-    <MainHead
-      title="Jeanine White: Personal Site"
-      description="Jeanine White: Developer, Speaker, and Writer..."
-    />
+    <MainHead />
   </head>
   <body>
     <TopNavigation />
-		<Hero />
+    <Hero />
+    <Services />
+    <ToolsUsed />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

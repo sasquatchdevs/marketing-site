@@ -3,23 +3,76 @@ const currentYear = new Date().getFullYear();
 ---
 
 <footer>
-  &copy; {currentYear} Sasquatch Devs
-  <small class="byline">Built by Astro</small>
+  <div>
+    <!-- email subscriptions -->
+    <div class="border-2 border-blue-600">
+      <img src="/assets/logo.png" alt="Sasquatch Devs Logo" class="w-1/12"/>
+      <h3>Sasquatch Devs</h3>
+    </div>
+    <div class="border-2 border-pink-600">
+      <p>Tellus non diam morbi quam vel venenatis proin sed dolor elementum nunc</p>
+      <input type="text" placeholder="Email address"/>
+      <button>Subscribe</button>
+    </div>
+    <!-- copyright -->
+    <div class="border-2 border-green-600">
+      &copy; {currentYear} Sasquatch Devs     
+    </div>
+    <!-- links -->
+    <div class="border-2 border-yellow-600">
+      <!-- company -->
+      <div class="border-2 border-red-600">
+        <h3>Company</h3>
+        <ul>
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a>Services</a>
+          </li>
+          <li>
+            <a>Projects</a>
+          </li>
+          <li>
+            <a>Blog</a>
+          </li>
+        </ul>
+      </div>
+      <!-- support -->
+      <div class="border-2 border-indigo-600">
+        <h3>Support</h3>
+        <ul>
+          <li>
+            <a>Help Center</a>
+          </li>
+          <li>
+            <a>Terms of Service</a>
+          </li>
+          <li>
+            <a>Legal</a>
+          </li>
+          <li>
+            <a>Privacy policy</a>
+          </li>
+        </ul>
+      </div>
+      <!-- contact -->
+      <div class="border-2 border-red-600">
+        <h3>Contact</h3>
+        <ul>
+          <li>
+            <a>email@email.com</a>
+          </li>
+          <li>
+            <a>+1 555-220-0213</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- socials -->
+    <div class="border-2 border-black">
+      <a>Github</a>
+    </div>
+  </div>  
 </footer>
-<style>
-  footer {
-    text-align: center;
-    padding-top: 8rem;
-    padding-right: 2rem;
-    padding-bottom: 4rem;
-    padding-left: 2rem;
-  }
 
-  .byline {
-    display: block;
-    margin-top: 1rem;
-    color: var(--t-subdue);
-    font-size: var(--f-d2);
-    text-transform: uppercase;
-  }
-</style>

@@ -1,0 +1,66 @@
+---
+const slides = [
+  {
+    img: "/assets/chart.svg",
+    title: "Goals Oriented Build Plan",
+    description: "Our team will chart out the specific content...",
+  },
+  {
+    img: "/assets/compass.svg",
+    title: "Web Development",
+    description: "Your Project Manager will guide you...",
+  },
+  {
+    img: "/assets/telephone.svg",
+    title: "Ongoing Support",
+    description: "We provide flexible options...",
+  },
+];
+---
+
+<!-- Importing Swiper's CSS from CDN -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<section>
+  <h2>Our Services</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      {
+        slides.map((slide) => (
+          <div class="swiper-slide">
+            <a
+            class="group relative flex flex-col min-w-0 break-words bg-clip-border rounded-3xl bg-gray-100 border-0 h-full text-center no-underline"
+            href="#"
+          >
+          <div class="card-body flex-auto p-9 text-gray-700">
+            <img src={slide.img} alt={slide.title} class="w-14 h-14 block mx-auto mb-4" />
+            <h3 class="font-semibold text-2xl mb-4">{slide.title}</h3>
+            <p class="card-text">{slide.description}</p>
+            </div>
+            </a>
+          </div>
+        ))
+      }
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- Importing Swiper's JS from CDN -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  // @ts-ignore
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      639: { slidesPerView: 2 },
+      992: { slidesPerView: 3 },
+    },
+  });
+</script>
